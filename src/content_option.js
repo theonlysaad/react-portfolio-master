@@ -1,5 +1,8 @@
 const logotext = "SAAD";
 import airbnbClone from "../src/assets/images/AirBnb_Clone.jpg";
+import Gestion_Ventes from "../src/assets/images/Gestion_Ventes.png";
+import Maps from "../src/assets/images/maps.png"
+import QuizApp from "../src/assets/images/Quiz App.png"
 const meta = {
     title: "Saad Chah",
     description: "Je suis Saad Chah, ingénieur en informatique et réseaux, actuellement en Master Architecte Web à Paris.",
@@ -66,23 +69,28 @@ const services = [
 ];
 
 const dataportfolio = [
+    
     {
         img: airbnbClone,
-        description: "Application web full-stack inspirée d'Airbnb, avec MySQL, Flask RESTful API et front-end dynamique en HTML5/CSS3/jQuery.",
+        description: "Application web full-stack inspirée d'Airbnb.",
         link: "https://github.com/theonlysaad/AirBnB_clone_v4.git",
     },
     {
-        img: "https://your-project-image-url.com",
-        description: "Création d'une plateforme d'orchestration de dataflows en Python.",
-        link: "#",
+        img: Gestion_Ventes,
+        description: "Gestion de Vente de Produits - Application de Gestion.",
+        link: "https://github.com/theonlysaad/GestionVentes.git",
     },
     {
-        img: "https://your-project-image-url.com",
-        description: "Automatisation du déploiement CI/CD avec Docker et Jenkins.",
-        link: "#",
+        img: QuizApp,
+        description: "Quiz App",
+        link: "https://github.com/theonlysaad/QuizApp.git",
+    },
+    {
+        img: Maps,
+        description: "GoogleMaps",
+        link: "https://github.com/theonlysaad/googlemapsapp.git",
     },
 ];
-
 const contactConfig = {
     YOUR_EMAIL: "saadchah.04@gmail.com",
     YOUR_FONE: "(+33) 7 44 86 98 61",
@@ -99,6 +107,7 @@ const socialprofils = {
     twitter: "https://twitter.com/your-twitter",
 };
 
+
 export {
     meta,
     dataabout,
@@ -111,3 +120,13 @@ export {
     socialprofils,
     logotext,
 };
+<style>
+{`
+    .dataportfolio img {
+        width: 100%;
+        height: 200px; /* Adjust the height */
+        object-fit: cover; /* Ensures images maintain aspect ratio */
+        border-radius: 8px; /* Optional: rounded corners */
+    }
+`}
+</style>
